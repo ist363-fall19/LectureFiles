@@ -1,0 +1,122 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    /* 
+        display:flex turns this parent element into a flex container. 
+        The elements directly inside (the <li>s) become flex items
+    */
+    display: flex;
+
+    /*
+        flex-direction controls the direction in which the flex items (<li>s) should be laid out
+        The default value is "row"
+        Other values are "column" to lay elements out vertically top-to-bottom
+        As well as "row-reverse" and "column-reverse"
+    */
+    flex-direction: row;
+    
+    /*
+        justify-content is used to align the flex items horizontally when laid out in a row
+        If the direction changes to column or column-reverse, justify-content affects the vertical layout
+        "flex-start" is the default value
+        Other values are "flex-end" to move items to the end of the container (normally the right side)
+        "center", "space-between", and "space-around" are the other valid values
+    */
+    justify-content: flex-start;
+
+    /*
+        align-items is used to align the flex items vertically when laid out in a row
+        If the direction changes to column or column-reverse, align-items affects the horizontal layout
+        "stretch" is the default value which makes each of the flex items the same heights, based on whichever is the tallest
+        Other values are "flex-start", "flex-end", "center" and "baseline"
+    */
+    align-items: flex-end;
+}
+
+a {
+    text-decoration: none;
+    background-color: #141416;
+    color: palegoldenrod;
+    display:block;
+}
+
+.average {
+    height: 580px;
+}
+
+.short {
+    height: 490px;
+}
+
+.tall {
+    height: 700px;
+}
+
+.grid {
+    display: flex;
+
+    /*
+        flex-wrap controls the "wrapping" of flex items inside a container
+        Sometimes you have large or very many flex items that wouldn't all fit inside a single row or a single column
+        The default behavior (flex-wrap: nowrap) causes the browser to shrink all of the flex items until the fit in a single line
+        If you don't want that behavior, you can change flex-wrap to "wrap"
+        If a flex-item wouldn't fit at the end of the row, the browser will lay it out on a new line instead and repeat for the rest of the flex items
+    */
+    flex-wrap: wrap;
+}
+
+.photo {
+    background-color: #ff2600;
+    color: midnightblue;
+    height: 200px;
+    margin: 0 12px;
+    padding: 0 24px;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*
+        flex-grow is a property for flex items that allow them to get larger in size, relative to one another
+        If there is free space in the flex container after all the items have been laid out at there initial sizes, flex-grow tells the browser than it can take that free space and give it to any "growable" items until they all fill the container completely.
+        The default value is "0" which means items will not get larger by default
+    */
+    flex-grow: 1;
+
+    /*
+        flex-shrink is a property for flex items that allow them to get smaller in size, relative to one another
+        If all of the flex items laid out are larger than flex container, flex-grow tells the browser that it can shrink them until they fit within the size of that container
+        The default value is "1" which means items will shrink automatically at an even rate relative to each other. I.e., each of the flex items will have the same amount of size taken away from them
+    */
+    flex-shrink: 1;
+
+    /*
+        flex-basis defines the initial size of a flex-item
+        When the direction of the container is "row", flex-basis acts as the starting width of that element
+        When the direction of the container is "column", flex-basis acts as the starting height of that element
+    */
+    flex-basis: 500px;
+}
+
+.greedy {
+    flex-grow: 5;
+    flex-shrink: 10;
+}
+
+.last {
+    /*
+        Flexbox allows the visual order of elements to differ from the source order, or the order that you wrote them in your HTML
+        Order allows you to change the order in which the browser renders flex items inside a container
+        The default value is "0" which means lay the element out in the place it would normally, based on the HTML
+        If you give a flex item an order >0, it will be moved to the end of the flex container
+        If you give a flex item an order <0, it will be moved to the beginning of the flex container
+    */
+    order: -1;
+}

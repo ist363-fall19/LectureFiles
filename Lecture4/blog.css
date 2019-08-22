@@ -1,0 +1,20 @@
+a {
+    display: block;
+}
+
+a::first-letter {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+a::first-line {
+    color: #ccc;
+}
+
+[href="#"] {
+    color: maroon;
+}
+
+[href*="syr.edu"] {
+    color: midnightblue;
+}

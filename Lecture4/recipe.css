@@ -1,0 +1,41 @@
+ol :first-child {
+    color: navy;
+}
+
+ol :last-child {
+    color: lavender;
+    padding: 38px;
+}
+
+ol li:first-of-type {
+    background-color: turquoise;
+}
+
+ol li:last-of-type {
+    background-color: #d44500;
+    padding: 12px;
+}
+
+ol div:last-of-type {
+    background-color: palegoldenrod;
+}
+
+ol li:nth-child(odd) {
+    background-color: rebeccapurple;
+}
+
+ol li:nth-child(even) {
+    background-color: lime;
+}
+
+ol li:nth-child(5n + 3) {
+    color: royalblue; 
+}
+
+li:hover {
+    font-weight: 700;
+}
+
+a:visited {
+
+}

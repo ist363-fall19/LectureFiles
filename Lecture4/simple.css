@@ -1,0 +1,53 @@
+/* 
+    Universal Selector - Selects every element on the page
+    Specificity: 0 points
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* 
+    Class Selector - Selects every element that has the specified class
+    This selector will select all <element class="header">
+    Specificity: 10 points
+*/
+.header {
+    background-color: #d9d9d9;
+    padding: 24px;
+}
+
+
+/* 
+    Class Selector - Selects the single element that has the specified ID
+    This selector will the sole <element id="name">
+    IDs need to be unique 
+    Specificity: 100 points
+*/
+#name {
+    font-size: 48px;
+    font-family: 'Arial';
+    color: navy;
+}
+
+
+/*
+    Descendant Combinator (Space)
+    Select all <a> tags that are inside (descendants) of <element class="navigation">
+    This selector combines a class selector + a type selector
+    Specifity: 11 points
+*/
+.navigation a {
+    color: maroon;
+}
+
+
+/*
+    Grouping Selector (Comma)
+    Apply the same styles to a set of different selectors
+    (Style every <a> tag the same as <element class="navigation")
+*/
+.navigation, a {}

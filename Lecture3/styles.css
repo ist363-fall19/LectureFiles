@@ -29,7 +29,7 @@ ul {
         Other values are "flex-end" to move items to the end of the container (normally the right side)
         "center", "space-between", and "space-around" are the other valid values
     */
-    justify-content: flex-start;
+    justify-content: space-evenly;
 
     /*
         align-items is used to align the flex items vertically when laid out in a row
@@ -37,7 +37,7 @@ ul {
         "stretch" is the default value which makes each of the flex items the same heights, based on whichever is the tallest
         Other values are "flex-start", "flex-end", "center" and "baseline"
     */
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 a {
@@ -88,7 +88,7 @@ a {
         If there is free space in the flex container after all the items have been laid out at there initial sizes, flex-grow tells the browser than it can take that free space and give it to any "growable" items until they all fill the container completely.
         The default value is "0" which means items will not get larger by default
     */
-    flex-grow: 1;
+    flex-grow: 0;
 
     /*
         flex-shrink is a property for flex items that allow them to get smaller in size, relative to one another
@@ -102,7 +102,7 @@ a {
         When the direction of the container is "row", flex-basis acts as the starting width of that element
         When the direction of the container is "column", flex-basis acts as the starting height of that element
     */
-    flex-basis: 500px;
+    flex-basis: 100px;
 }
 
 .greedy {
@@ -118,5 +118,9 @@ a {
         If you give a flex item an order >0, it will be moved to the end of the flex container
         If you give a flex item an order <0, it will be moved to the beginning of the flex container
     */
-    order: -1;
+    order: 5;
+}
+
+.second {
+    order: -2;
 }

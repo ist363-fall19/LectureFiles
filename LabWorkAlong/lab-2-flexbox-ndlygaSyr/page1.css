@@ -1,0 +1,86 @@
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-1 {
+    justify-content: space-evenly;
+}
+
+.flex-2{
+    justify-content: space-between;
+}
+
+.flex-item {
+    height: 200px;
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: black;
+    flex: 1;
+}
+
+.blue {
+    background-color: lightblue;
+}
+
+.red {
+    background-color: lightcoral;
+}
+
+.bigger-2x {
+    flex: 2;
+}
+
+.purple{
+    background-color: blueviolet;
+}
+
+.green{
+    background-color: lightgreen;
+}
+
+.green-split{
+    flex: .33;
+    
+}
+
+
+.flex-3 {
+    justify-content: center;
+}
+
+.pink{
+    background-color: palevioletred;
+    flex: .33;
+}
+
+.slategray {
+    background-color: slategray;
+    flex: .25;
+}
+
+.flex-4{
+    justify-content: space-around;
+}
+
+.seagreen{
+    background-color:seagreen;
+    flex:.15;
+}
+.flex-5{
+    justify-content:flex-end;
+}
+
+.yellow{
+    background-color: yellow;
+}
+.half {
+    flex: .5;
+}
+.quarter {
+    flex:.25;
+}

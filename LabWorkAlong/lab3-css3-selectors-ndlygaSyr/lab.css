@@ -1,0 +1,104 @@
+/*
+    Put all of your CSS rules here
+    You should end up with 40 selectors in total
+*/
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+.header {
+    background-color: #242628;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0 4px 7px rgba(0, 0, 0, .15);
+}
+
+.header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 0px;
+}
+
+.header > .container > .navigation {
+    display: flex;
+}
+
+.header .navigation a {
+    display: block;
+    height: 72px;
+    line-height: 72px;
+    text-decoration: none;
+    color: white;
+    padding: 0 15px;
+}
+
+.header .navigation a:hover {
+    background-color: #343536;
+}
+
+#site-logo {
+    color: white;
+    text-decoration: none;
+    font-style: bold;
+    padding: 6px 12px;
+    border: 2px solid transparent; 
+}
+
+#site-logo:hover {
+    border: 2px solid white; 
+}
+
+.main {
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.posts {
+    width: 800px;
+    display: flex;
+    margin-right: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.posts .post {
+    background-color: #242628;
+    padding: 15px;
+    margin-left: 0;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #202020;
+    border-radius: 3px;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, .15);
+    width: 310px;
+}
+
+.posts .post:hover {
+    background-color: #202020;
+}
+
+.posts .post:first-of-type,
+.posts .post:last-of-type {
+    width: 100%;
+    margin-right: 0;
+}
+
+.posts .post:nth-child(odd) {
+    margin-right: 0;
+}
+
+.posts .post .post-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.posts .post:first-child > .post-title {
+    font-size: 36px;
+    font-weight: 900;
+}

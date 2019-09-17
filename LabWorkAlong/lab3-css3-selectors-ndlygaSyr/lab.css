@@ -59,7 +59,9 @@ ul {
 }
 
 .posts {
-    width: 800px;
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 0;
     display: flex;
     margin-right: 30px;
     flex-wrap: wrap;
@@ -75,7 +77,9 @@ ul {
     border: 1px solid #202020;
     border-radius: 3px;
     box-shadow: 0 4px 7px rgba(0, 0, 0, .15);
-    width: 310px;
+    flex-basis: 360px;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 .posts .post:hover {
@@ -84,8 +88,9 @@ ul {
 
 .posts .post:first-of-type,
 .posts .post:last-of-type {
-    width: 100%;
+    flex-basis: 100%;
     margin-right: 0;
+    flex-shrink: 1;
 }
 
 .posts .post:nth-child(odd) {
@@ -101,4 +106,31 @@ ul {
 .posts .post:first-child > .post-title {
     font-size: 36px;
     font-weight: 900;
+}
+
+.post-title a {
+    color: white;
+}
+
+.post .post-teaser {
+    font-weight: 300;
+}
+
+.posts-more {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    height: 44px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #202020;
+    border-radius: 22px;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, .15);
+}
+
+.posts-more:hover {
+    border: 1px solid #0062e6;
+    background-color: #007bff;
 }

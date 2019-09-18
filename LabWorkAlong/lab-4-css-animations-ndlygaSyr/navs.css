@@ -6,6 +6,20 @@
 /*navs.html Transition 2*/
 .n-2 nav {background-color:#2196F3;}
 .n-2 a {color:#fff;}
+.n-2 a::after {
+    content: " ";
+    border-bottom: 1px solid white;
+    width: 0%;
+    display: block;
+    position: relative;
+    left: 0;
+    bottom: 11px;
+    transition: width .5s;
+}
+
+.n-2 a:hover::after {
+    width: 100%;
+}
 
 
 /*navs.html Transition 3*/

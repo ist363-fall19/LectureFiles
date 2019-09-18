@@ -1,0 +1,30 @@
+/*navs.html Transition 1*/
+.n-1 nav {background-color:#3F51B5;}
+.n-1 a {color:#fff;}
+
+
+/*navs.html Transition 2*/
+.n-2 nav {background-color:#2196F3;}
+.n-2 a {color:#fff;}
+
+
+/*navs.html Transition 3*/
+.n-3 nav {background-color:#009688;}
+.n-3 a {color:#fff;}
+
+.n-3 a {position:relative;}
+
+
+    
+/*navs.html Transition 4*/
+.n-4 nav {background-color:#2E7D32;}
+.n-4 a {color:#fff;}
+.n-4 a span {position:relative; z-index:1;}
+
+
+
+/*navs.html Transition 5*/
+.n-5 ul {background-color:#FFD54F;}
+.n-5 a {color:#000;}
+.n-5 a span {display:block;}
+

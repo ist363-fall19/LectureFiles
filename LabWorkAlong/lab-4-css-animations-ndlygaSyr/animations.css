@@ -16,9 +16,9 @@
 	
 
 /*a-2 Animation*/
-/* @keyframes movebox {
+@keyframes movebox {
     from {left: 0px;}
-    to {left: 200px;}
+    to {left: 100%;}
 }
 
 
@@ -27,10 +27,11 @@
     width: 100px;
     height: 100px;
     position: relative;
+    animation-direction: alternate;
     animation-name: movebox;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-} */
+}
 
 
 

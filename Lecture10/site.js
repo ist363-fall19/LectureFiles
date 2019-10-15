@@ -54,4 +54,10 @@ for (var i = 0 ; i < length ; i++) {
 var el = document.getElementById("MyButton")
 el.addEventListener("click", function(evt) {
     // Do something when the event happens
+    // Change an element, update current element
+
+    // Element clicked
+    // evt is the variable containing the event passed
+    // to the funtion
+    var el = evt.target || evt.currentTarget;
 })

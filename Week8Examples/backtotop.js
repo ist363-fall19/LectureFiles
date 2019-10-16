@@ -37,10 +37,17 @@ function scrollToTop(scrollDuration) {
 
 var toTop = document.getElementById("goto-top");
 toTop.addEventListener("click", function(){
-  scrollToTop(2000);
+  scrollToTop(1000);
 });
 
+
+
 window.addEventListener('scroll', function(evt) {
-    // console.log(window.scrollY);
+    console.log(window.scrollY);
     // finish adding removing classes
+    if (window.scrollY > 60) {
+        toTop.classList.add("show");
+    } else {
+        toTop.classList.remove("show");
+    }
 });

@@ -37,6 +37,10 @@ function scrollToTop(scrollDuration) {
 
 var toTop = document.getElementById("goto-top");
 toTop.addEventListener("click", function(){
-    console.log('click');
-  scrollToTop(4000);
+  scrollToTop(2000);
+});
+
+window.addEventListener('scroll', function(evt) {
+    // console.log(window.scrollY);
+    // finish adding removing classes
 });

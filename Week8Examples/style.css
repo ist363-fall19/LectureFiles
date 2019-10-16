@@ -1,0 +1,9 @@
+body {
+    position: relative;
+}
+
+#goto-top {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+}

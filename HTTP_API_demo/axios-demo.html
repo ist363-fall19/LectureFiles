@@ -19,17 +19,17 @@
 var key = "AIzaSyAkg_Wros3YImGSqzQN3jsuUoWjfrXTok0";
 var url = "https://www.googleapis.com/youtube/v3/search";
 
-axios.get(url, {
+axios.get("https://www.googleapis.com/youtube/v3/search", {
     params: {
       key: key,
       part: 'snippet',
       maxResults: 8,
       type: 'video',
-      q: 'labordoodle'
+      q: 'dachshund'
     }
   }).then(function(response) {
       console.log(response);
-      document.getElementById("response").textContent = JSON.stringify(response.data);
+      this.setState({videos: response.data.items});
   })
 
 </script>

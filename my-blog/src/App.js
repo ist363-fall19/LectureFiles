@@ -95,6 +95,15 @@ class App extends React.Component {
                   )
                 }}
               </IfFirebaseAuthed>
+              <IfFirebaseAuthed>
+                {() => {
+                  return (
+                    <li>
+                      <Link to="/admin/new">Add Post</Link>
+                    </li>
+                  )
+                }}
+              </IfFirebaseAuthed>
             </ul>
           </nav>
   
